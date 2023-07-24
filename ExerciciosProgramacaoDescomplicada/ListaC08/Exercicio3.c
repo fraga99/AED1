@@ -8,7 +8,7 @@
 int somaDosCubos (int N);
 
 int main ()    {
-    int N = 3;
+    int N = 2;
     int aux;
     aux = somaDosCubos(N);
     printf ("Soma dos numeros n ao cubo: %d", aux);
@@ -22,6 +22,6 @@ int somaDosCubos (int N)    {
     if (N == 0)    {
         return 0;
     } else    {
-        return pow(N, 3) + somaDosCubos(N-1);
+        return (N*N*N) + somaDosCubos(N-1);
       }
 }
